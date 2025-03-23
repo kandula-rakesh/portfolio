@@ -1,0 +1,23 @@
+<section class="experience-section animate-fade-in">
+  <h2>Work Experience</h2>
+  <div class="experience-container">
+    <div class="company-buttons">
+      <button
+        *ngFor="let exp of experiences"
+        (click)="selectExperience(exp)"
+        [class.active]="selectedExperience === exp"
+        class="company-button"
+      >
+        <span class="company-name">{{ exp.company }}</span>
+        <span class="company-period">{{ exp.period }}</span>
+      </button>
+    </div>
+    <div class="experience-content" *ngIf="selectedExperience">
+      <div class="role-header">
+        <h3>{{ selectedExperience.role }}</h3>
+        <span class="period">{{ selectedExperience.period }}</span>
+      </div>
+      <p class="description">{{ selectedExperience.description }}</p>
+    </div>
+  </div>
+</section>

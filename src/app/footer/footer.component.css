@@ -1,0 +1,54 @@
+.footer {
+  background: linear-gradient(135deg, #2d3436 0%, #1a1c1d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin-top: auto;
+}
+
+.contact-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #a8e6cf, #6c5ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: #a8e6cf;
+}
+
+.contact-item p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+}

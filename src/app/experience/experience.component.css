@@ -1,0 +1,105 @@
+.experience-section {
+  padding: 4rem 2rem;
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.experience-section h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(45deg, #6c5ce7, #a8e6cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-container {
+  display: flex;
+  gap: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.company-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 250px;
+}
+
+.company-button {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  border: none;
+  background: #f8f9fa;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.company-button .company-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.company-button .company-period {
+  font-size: 0.9rem;
+  color: #636e72;
+}
+
+.company-button.active {
+  background: linear-gradient(45deg, #6c5ce7, #a8e6cf);
+  color: white;
+}
+
+.company-button.active .company-period {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.company-button:hover:not(.active) {
+  background: #edf2f7;
+  transform: translateX(5px);
+}
+
+.experience-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.role-header h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.period {
+  font-size: 1rem;
+  color: #636e72;
+  font-weight: 500;
+}
+
+.description {
+  line-height: 1.8;
+  color: #2d3436;
+  font-size: 1.1rem;
+}
